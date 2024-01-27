@@ -1,12 +1,13 @@
 import { Container } from "react-bootstrap"
-import Formulario from "./Components/Formulario"
+import FormularioContenedor from "./Components/FormularioContenedor"
+
 
 function App() {
  
 
   return (
     <Container className="main d-flex justify-content-center align-items-center">
-      <Formulario></Formulario>
+      <FormularioContenedor></FormularioContenedor>
     </Container>
   )
 }
