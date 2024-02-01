@@ -1,14 +1,19 @@
-import { Container } from "react-bootstrap"
-import Formulario from "./Components/Formulario"
+import { Container } from "react-bootstrap";
+import FormularioContenedor from "./Components/FormularioContenedor";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+
 
 function App() {
- 
-
   return (
-    <Container className="main d-flex justify-content-center align-items-center">
-      <Formulario></Formulario>
-    </Container>
-  )
+    <>
+      <Navbar></Navbar>
+      <Container className="main d-flex justify-content-center align-items-center">
+        <FormularioContenedor></FormularioContenedor>
+      </Container>
+      <Footer></Footer>
+    </>
+  );
 }
 
-export default App
+export default App;
